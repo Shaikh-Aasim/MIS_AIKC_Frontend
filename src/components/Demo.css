@@ -1,0 +1,25 @@
+
+
+    .containerPrint{
+        margin: 0;
+        display: block;
+        max-width: 8.5in; /* Letter size width */
+  /* height: 11in; */
+  height: auto;
+        /* border: 1px solid #000; */
+        padding: 0.5in;
+    }
+    #top-head{
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+    .main{
+        font-size: 13px;
+        margin-top: 15px;
+    }
+    .main span{
+        margin:  5px 0;
+        padding-right: 5px;
+        line-height: 20px;
+    }

@@ -1,0 +1,219 @@
+.toppart{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    /* background: url("https://image.slidesdocs.com/responsive-images/docs/display-board-enterprise-profile-and-regulations-in-blue-gradient-technology-and-science-business-page-border-background-word-template_95bea69c5b__1131_1600.jpg") no-repeat top center/cover; */
+    flex-wrap: wrap;
+    padding: 20px 90px;
+    /* padding-top: 20px; */
+    background: #cfe4f3;
+  }
+
+  .toppart img{
+    align-items:start;
+    /* border: 1px solid #222; */
+    width: 100px;
+    height: 100px;
+  }
+  
+  .upper{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap:15px;
+    margin: 0 20px;
+  }
+  
+  .lower{
+    display: flex;
+    gap:20px;
+    margin: 0 20px;
+    flex-wrap: wrap;
+  }
+
+/* Apply styles to the main container */
+/* .mainBox {
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 10px 90px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    background: url("https://static.vecteezy.com/system/resources/thumbnails/003/567/241/small/grey-gradient-abstract-background-creative-project-illustration-free-vector.jpg") no-repeat center/ cover;
+    gap: 2%;
+  } */
+  @media screen {
+    .mainBox {
+      min-height: 100vh;
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      margin: 0px;
+      padding: 10px 90px;
+      padding-top: 30px;
+      box-sizing: border-box;
+      background: url("https://static.vecteezy.com/system/resources/thumbnails/003/567/241/small/grey-gradient-abstract-background-creative-project-illustration-free-vector.jpg") no-repeat center/ cover;
+      gap: 2%;
+    }
+
+    .leftBox, .rightBox {
+      width: 48%;
+      padding: 20px ;
+      box-sizing: border-box;
+      border: 0px solid black;
+      background: #fff;
+      /* box-shadow: 0 0 1px #333; */
+    }
+  }
+  .mainBox h2{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #222;
+  }
+  
+  /* Style the left and right boxes */
+  /* .leftBox, .rightBox {
+    width: 48%;
+    padding: 20px ;
+    box-sizing: border-box;
+    border: 0px solid black;
+    background: #fff;
+  } */
+  
+  /* Style the form */
+  form {
+    font-family: Arial, sans-serif;
+    padding: 15px;
+  }
+  
+  .form-group{
+    display: flex;
+  }
+  /* Style labels */
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    width: 50%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style the info-text divs */
+  .info-text {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* background-color: #fff; */
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style the headings */
+
+
+  #info .form-group{
+    margin: 0px;
+
+  }
+
+  .graduation{
+    padding:10px ;
+  }
+
+  @media screen and (max-width: 990px) {
+
+    .mainBox {
+      flex-direction: column;
+      padding: 50px;
+    }
+    .leftBox, .rightBox {
+      width: 100%;
+    }
+    .toppart .head{
+      width: 80%;
+    }
+  }
+  
+  /* Media query for small screens (max-width: 768px) */
+  @media screen and (max-width: 768px) {
+    .toppart img{
+      width: 100%;
+    }
+    .toppart .head{
+      width: 100%;
+    }
+
+    .toppart .head .upper{
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+    }
+    
+    .mainBox {
+      flex-direction: column;
+      padding: 0px;
+    }
+    .leftBox, .rightBox {
+      width: 100%;
+    }
+    .info-text {
+      width: 100%; /* Make the divs full width on small screens */
+    }
+    .form-group{
+        flex-direction: column;
+    }
+
+    label {
+        width: 100%;
+      }
+
+      .graduation{
+        overflow-x: scroll;
+        font-size: 12px;
+      }
+
+      .toppart{
+        padding: 10px;
+      }
+      /* .upper{
+        width: 20%;
+      } */
+      .head{
+        width: 50%;
+      }
+      .toppart h5{
+        font-size: 15px;
+      }
+      .toppart h2{
+        text-align: center;
+        margin-top: 20px;
+      }
+      .toppart .lower{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+  }
+  @media screen {
+    .all-stud-print {
+      display: none;
+    }
+      
+  }
+
+  .adjustable-font-size {
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    overflow: hidden; /* Hide any overflowing content */
+    text-overflow: ellipsis; /* Show ellipsis (...) for text that overflows */
+  }

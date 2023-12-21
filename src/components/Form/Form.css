@@ -1,0 +1,20 @@
+.form-control{
+    border: 1px solid #000;
+}
+
+.table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  .header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  /* .header h1{
+    width: 50%;
+  } */

@@ -1,0 +1,227 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: url("imgs/bg_img2.jpg") no-repeat center center / cover;
+    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#year {
+    -moz-appearance: textfield;
+    width: 100px;
+    background: transparent;
+     text-align: center; outline:none;
+      border: none;
+      color: white;
+  }
+
+nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #6197c6;
+    box-shadow: 0 0px 10px #222;
+    transition: 1s linear;
+    color: #fff;
+    z-index: 2;
+    padding: 0 70px;
+    & * {
+        vertical-align: middle;
+        margin-block: auto;
+    }
+}
+
+.logo{
+    max-width: 50%;
+    margin-left: 25px;
+    font-family: 'Taviraj', serif;
+    position: relative;
+    
+
+    & > img {
+        width: 10%;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+
+    &::after {
+        content: 'All India Khilafat Committee College of Education';
+        top: -100px;
+        color: #fff;
+        font-size: 18px;
+    }
+
+}
+
+
+
+.nav-links{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s linear;
+}
+
+
+
+.year{
+    width: 50%;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    font-size: 25px;
+    /* border: 1px solid black; */
+    cursor: pointer;
+}
+
+.nav-links .year b{
+    list-style-type: none;
+    text-decoration: none ;
+    margin: 0 10px;
+}
+
+.search{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.search form input{
+    margin: 0 5px; 
+}
+.search form input{
+    width: 100%;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 5px 10px;
+    outline: 1px solid #222;
+}
+
+.search form button:has(i) {
+    /* border: 0; */
+    border-radius: 50%;
+    aspect-ratio: 1;
+    width: 30px;
+    height: 30px;
+    line-height: 1.2;
+    background: #fff;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.nav-links{
+    justify-content: end;
+    transition: 1s linear;
+}
+
+.home-btn{
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 1030px) {
+    .logo{
+        width: 70%;
+    }
+    nav{
+        border-bottom: 1px solid #fff;
+        padding: 0 90px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-links-mobile{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100px;
+        width: 100%;
+        padding-left: 0px;
+        transition: 1s linear;
+        min-height: 1000px;
+        /* background: url("imgs/bg_img2.jpg") no-repeat center center / cover; */
+        background-color: #cfe4f3;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: #fff;
+        background: transparent;
+        border: none;
+        outline: none;
+        top: 15px;
+        right: 25px;
+    }
+
+    .logo::after{
+        content: 'AIKC';
+    }
+    .logo img{
+        width: 15%;
+    }
+    .year{
+        margin: 20px  auto;
+        justify-content: space-around;
+        color: #000;
+        /* background: #fff; */
+
+    }
+    .search{
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+        width: 90%;
+        /* background: #fff; */
+
+    }
+    .search form{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .search .btn{
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 530px) {
+    .logo img{
+        width: 25%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    nav{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .logo img{
+        width: 35%;
+    }
+    .logo::after{
+        font-size: 30px;
+    }
+}

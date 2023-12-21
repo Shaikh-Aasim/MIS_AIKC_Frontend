@@ -1,0 +1,59 @@
+
+.card {
+  height: 92%;
+  position: relative;
+  border: none;
+  background: transparent;
+}
+
+.card-body {
+  cursor: pointer;
+  padding-top: 0px;
+  border-radius: 15px;
+  box-shadow: 0 1px 10px #222;
+  background: url("https://image.slidesdocs.com/responsive-images/docs/display-board-enterprise-profile-and-regulations-in-blue-gradient-technology-and-science-business-page-border-background-word-template_95bea69c5b__1131_1600.jpg")
+    no-repeat center center/cover;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  transition: .1s linear;
+
+}
+.card-body:hover{
+  box-shadow: 0 1px 20px #222;
+}
+
+.card-body img {
+  box-shadow: 0 0 5px #000;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40%;
+  margin: 15px 0;
+  transition: .1s linear;
+}
+.card-body p{
+  line-height: 15px;
+}
+.card-body h6 {
+  font-weight: 600;
+}
+
+.card-body i {
+  cursor: pointer;
+  color: #fff;
+  background: #6197c6;
+  padding: 6px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #000;
+  transition: .1s linear;
+}
+
+.card-body .btn {
+  color: #fff;
+  background: #6197c6;
+  box-shadow: 0 0 5px #000;
+  transition: .1s linear;
+}
+
+.card-body i:hover, .card-body .btn:hover{
+  box-shadow: 0 0 15px #000;
+}

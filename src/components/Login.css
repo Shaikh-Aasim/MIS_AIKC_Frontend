@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@300&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+}
+.logo1 img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inner-width {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  /* background: url("imgs/bg_img.jpg") no-repeat center center/ cover; */
+  /* background: url("https://img.freepik.com/free-vector/gradient-white-monochrome-background_23-2148996240.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1696723200&semt=ais") no-repeat center center/ cover; */
+  background: url("https://img.freepik.com/free-vector/simple-blue-gradient-background-vector-business_53876-174921.jpg?w=2000") no-repeat center center/ cover;
+}
+
+
+.services {
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+}
+
+.service {
+  width: calc(50% - 10px);
+  border-radius: 6px;
+  margin: 20px 0;
+  padding: 30px 10px;
+  padding: 30px 0px;
+  /* padding-left: 60px; */
+  color: #000;
+}
+
+.service h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+  width: 95%;
+  font-family: 'Taviraj', serif;
+font-family: 'Young Serif', serif;
+}
+.service h4, .service p{
+    font-family: 'Onest', sans-serif;
+}
+
+#form_btn {
+  border: 1px solid #fff;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  padding: 12px 80px;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+
+#form_btn:hover {
+  box-shadow: 0 0 5px #000;
+}
+
+
+.login-container {
+    margin-top: 8%;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    padding-top: 40px;
+    width: 22%;
+    margin-left: -25px;
+    transition: 1s linear;
+}
+
+
+.login-container h2 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    
+}
+
+.login-form input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    transition: 0.1s linear;
+}
+
+.login-button {
+    margin-top: 10px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background: #222;
+}
+
+@media screen and (max-width: 1015px) {
+
+  .inner-width {
+    padding: 0 20px;
+  }
+  .service1 {
+    padding-left: 0px;
+    width: calc(45% - 10px);
+  }
+
+  .service h1 {
+    font-size: 35px;
+    width: 90%;
+  }
+
+  .service .p1 {
+    width: 90%;
+  }
+
+  #form_btn {
+    padding: 10px 65px;
+  }
+}
+
+@media screen and (max-width: 848px) {
+  .service1 {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: calc(100% - 10px);
+  }
+
+  .homebg {
+    width: calc(100% - 10px);
+    height: 200px;
+  }
+
+  #form_btn {
+    display: block;
+    padding: 16px 101px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .service h1 {
+    font-size: 35px;
+    width: 100%;
+  }
+
+  .service .p1 {
+    /* font-size: 35px; */
+    width: 100%;
+  }
+  
+  .login-container{
+    width: 50%;
+    margin-left: 0px;
+    
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #form_btn {
+    font-size: 15px;
+    padding: 12px 15px;
+    width: 60%;
+  }
+
+  .service{
+    margin: 0;
+  }
+  .service h1 {
+    font-size: 28px;
+  }
+  
+  .login-container{
+    width: 80%;
+    /* padding: 50px 20px; */
+    margin-bottom: 100px;
+    padding:50px 20px;
+  }
+
+  .login-container h2{
+    margin-bottom: 10px;
+  }
+}

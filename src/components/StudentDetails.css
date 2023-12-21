@@ -1,0 +1,56 @@
+
+.student-details{
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    height: calc(100% - 100px);
+    margin-left: 200px;
+    /* border-top: 2px solid #222; */
+    padding: 0 40px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 1;
+    /* background: url("/imgs/bg_img2.jpg") no-repeat center/ cover; */
+    /* background: url("https://static.vecteezy.com/system/resources/thumbnails/003/567/241/small/grey-gradient-abstract-background-creative-project-illustration-free-vector.jpg") no-repeat center/ cover; */
+    /* background: #6197c6; */
+    background: #d1e2ef;
+}
+
+.cards{
+    display: flex;
+    width: calc(100% - 210px);
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 1000px) {
+    .student-details{
+        margin-left: 201px;
+        top: 101px;
+        padding: 0;
+    }
+
+    
+}
+
+@media screen and (max-width: 450px) {
+    .student-details{
+        margin-left: 0px;
+        top: 145px;
+        padding: 0 20px;
+    }
+    .cards{
+        width: 100%;
+    }
+
+    .notfound{
+        text-align: center;
+    }
+}
+@media screen {
+	.print-div,.all-stud-print {
+		display: none;
+	}
+    
+}
